@@ -1,0 +1,33 @@
+前期
+6.12- 	学习EQL语言
+6.19-	复习学习编译原理Lex+Yacc+ES
+6.26-	搭建系统框架及组件评估，实现EQL基本语法的demo
+
+3个多月
+
+EQL编译器（名称？）开发计划
+
+7.6-	需求分析及系统设计
+	全面分析EQL->完整的语法规范
+	功能、数据结构、运行环境、接口、ES库设计等
+
+	python ply es
+
+8.6-	编程实现
+9.6-	测试及修改
+
+产品：EqlDB
+目标客户：知识图谱开发者，数据库应用开发者
+计划支持的平台：Unix,MacOS,Windows
+计划支持的语言：Python,C++,Java，第一步先实现Python支持
+核心：EQL Compiler (EQL语言编译器)，用Python语言实现，采用PLY类库
+（Python中实现Lex+Yacc)，底层数据存储用ElasticSearch实现
+（注：未来可能用Flex+Bison+C语言作进一步的性能优化）
+
+产品核心部件：
+1.EQL引擎，将EQL语句编译为ElasticSearch代码并执行
+2.EQL Workbench，类似mySQL Workbench的简化版
+3.一个精准搜索的demo,配一个小型的知识图谱，如诺贝尔奖、奥斯卡奖小型知
+识图谱
+4.Python EqlDB类库
+近期工作重点：EQL Compiler
